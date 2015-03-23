@@ -1,0 +1,67 @@
+﻿extends layout
+
+var contributors = #{contributors}
+
+block content
+    section#page-top.section-style.parallax-bg(data-background-image='images/background/page-top.jpg')
+      .pattern.height-resize
+        .container
+          h1.site-title
+            | Dembeli
+          h3.section-name
+            span Project management
+          #time_countdown.time-count-container
+            .col-sm-3
+              .time-box
+                .time-box-inner.dash.days_dash.animated(data-animation='rollIn', data-animation-delay='300')
+                  span.time-number
+                    span.digit 0
+                    span.digit 0                    
+                    span.digit 0                  
+                  span.time-name Days            
+            .col-sm-3
+              .time-box
+                .time-box-inner.dash.hours_dash.animated(data-animation='rollIn', data-animation-delay='600')
+                  span.time-number
+                    span.digit 0                    
+                    span.digit 0
+                  span.time-name Hours
+            .col-sm-3
+              .time-box
+                .time-box-inner.dash.minutes_dash.animated(data-animation='rollIn', data-animation-delay='900')
+                  span.time-number
+                    span.digit 0                    
+                    span.digit 0
+                  span.time-name Minutes
+            .col-sm-3
+              .time-box
+                .time-box-inner.dash.seconds_dash.animated(data-animation='rollIn', data-animation-delay='1200')
+                  span.time-number
+                    span.digit 0
+                    span.digit 0
+                  span.time-name Seconds
+          p.time-until
+            span Time Until Launch          
+          .next-section
+            a.go-to-about
+              span          
+    section#about.section-style.no-parallax-bg(data-background-image='images/background/about-us.jpg')
+      .pattern.height-resize
+        .container
+          h3.section-name
+            span Help us build a better system          
+          h2.section-title Contributors          
+          p.section-description
+            | If you want to contribute fork the project on <a href="https://github.com/dembeli/dembelipm">Github</a>, commit your code and send us a pull request.          
+          .team-container
+            .row             
+             each member in contributors               
+              .col-sm-4
+                .team-member
+                  figure
+                    img(src='#{member.avatar_url}', alt='#{member.login}', width='245', height='245')                    
+                    figcaption
+                      p.member-name #{member.login}
+                      
+                      p.designation
+                        | contributions: #{member.contributions}                             
