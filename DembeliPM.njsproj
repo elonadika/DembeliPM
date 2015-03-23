@@ -62,6 +62,8 @@
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="views\error.jade" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
