@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\assets\js\analytics.js" />
     <Compile Include="public\assets\js\functions.js" />
     <Compile Include="public\assets\js\html5shiv.js" />
     <Compile Include="public\assets\js\jquery-2.1.0.min.js" />
@@ -62,8 +63,6 @@
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="views\error.jade" />
-    <Content Include="Web.config" />
-    <None Include="Web.Debug.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
