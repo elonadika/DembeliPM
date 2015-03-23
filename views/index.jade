@@ -53,15 +53,17 @@ block content
           h2.section-title Contributors          
           p.section-description
             | If you want to contribute fork the project on <a href="https://github.com/dembeli/dembelipm">Github</a>, commit your code and send us a pull request.          
-          .team-container
+          .col-sm-2
+          .team-container.col-sm-8
             .row             
              each member in contributors               
               .col-sm-4
-                .team-member
+                .team-member.box
                   figure
-                    img(src='#{member.avatar_url}', alt='#{member.login}', width='245', height='245')                    
-                    figcaption
-                      p.member-name #{member.login}
-                      
+                    img(src='#{member.avatar_url}', alt='#{member.login}', width='150', height='150')                    
+                    figcaption.figcaption
+                      p.member-name <a href="#{member.html_url}">#{member.login}</a>
                       p.designation
-                        | contributions: #{member.contributions}                             
+                        | contributions: #{member.contributions}
+
+           .col-sm-2

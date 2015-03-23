@@ -372,16 +372,19 @@ a
 
 .team-container
   .col-sm-4
-    padding 60px 15px 0 15px
+     padding 5px	
   .team-member
-    max-width 245px
-    margin auto
-    position relative
-    overflow hidden
-    &:hover
+     max-width 150px	 
+     margin auto
+     position relative
+     overflow hidden
+	   
+   &:hover
       figure
         background-color #3498db
         color #fff
+		padding 3px
+		border 1px solid #fff
       figcaption
         border-color #3498db
         color #fff
@@ -389,23 +392,21 @@ a
         top 90px
   figcaption
     text-align center
-    text-transform uppercase
-    width 100%
-    height 110px
-    border 1px solid #fff
+    text-transform uppercase	
+    width 100%       
     border-top-color transparent
     margin 0
     h4
       font-size 22px
       font-weight 700
-      padding-top 20px
+      padding-top 10px
     p
-      font-size 1.125em
+      font-size 0.8em
   .member-name
-    font-size 1.5em
+    font-size 1em
     font-weight 700
     margin 0
-    padding 26px 10px 5px 10px
+    padding 10px 10px 5px 10px
   .social-buttons
     display inline-block
     margin auto
@@ -806,3 +807,111 @@ form
    100% 
 	   opacity 0
 	   transform scale(1)
+
+
+
+@media (max-width:992px)
+	.navbar-header 
+		float none
+
+	.navbar-left,.navbar-right
+		float none !important
+
+	.navbar-toggle
+		display block
+
+	.navbar-collapse
+		border-top 1px solid transparent
+		box-shadow none
+		&.collapse
+			display none!important
+
+	.navbar-fixed-top
+	  top 0
+	  border-width 0 0 1px
+
+	.navbar-nav
+	  float none!important
+	  margin-top 7.5px
+	  li
+		float none
+		float none !important
+		a
+		  padding-top 10px
+		  padding-bottom 10px
+
+	.collapse.in
+		display block !important
+
+
+@media screen and (max-width:992px)
+    #headernavigation
+       background rgba(0,0,0,.5)
+	.navbar-default 
+	.navbar-toggle:hover
+	.navbar-default 
+	.navbar-toggle:focus
+	   background-color transparent
+	.navbar-default 
+	.navbar-toggle
+		width 180px
+
+
+@media screen and (min-width:992px)
+    .navbar-fixed-top
+	   top 100px
+       z-index 9999
+
+	.navbar-default
+	   width 180px
+
+	.navbar-nav
+	li
+	  float none !important
+
+@media screen and (max-width: 992px)
+	.container
+	  width 100%
+	  max-width 830px
+
+@media (min-width: 992px)
+	.container
+	  width 100%
+	  max-width 830px
+
+
+@media screen and (max-width: 768px)
+	.section-title
+	  font-size 40px
+	
+	#contact-form 
+	#first_name
+	  border-right 1px solid #fff
+	
+	#contact-form 
+	#subject
+	  border-top 0px solid transparent
+	
+	#contact-form  
+	#email
+	  border-right 1px solid #fff
+	
+	#contact-form  
+	.btn
+	  border-left 1px solid #fff
+	
+
+@media (min-width: 1170px)
+	.container
+	  width 830px
+
+.box
+  padding  2px
+  border  1px solid #fff
+  margin 0 5px 0 0
+
+.figcaption
+
+.member-name a
+  color #fff
+  padding-bottom 5px
