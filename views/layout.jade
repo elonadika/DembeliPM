@@ -36,7 +36,14 @@ html
           li.active
             a(href='#page-top') Home 
           li
-            a(href='#about') Contributors                          
+            a(href='#about') About 
+          li
+            a(href='#techstack') Tech Stack
+          li
+            a(href='#contributors') Contributors                          
+          li
+            a(href='#subscribe') Subscribe
+
     block content                                 
     footer#footer-section
       p.copyright       
@@ -48,9 +55,5 @@ html
     script(type='text/javascript', src='assets/js/plugins.js')    
     script(type='text/javascript', src='assets/js/functions.js')    
     script(type='text/javascript', src='assets/js/jquery.parallax.js')
-    script(type='text/javascript').
-        jQuery(document).ready(function($) {
-            $(window).load(function(){
-                $("#page-top").parallax("50%", 0.2);
-            })
-        })
+
+    script(src='assets/js/analytics.js')
